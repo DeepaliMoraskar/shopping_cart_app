@@ -1,0 +1,25 @@
+@import "../../variable.scss";
+
+.login-form-display {
+  width: 100%;
+  display: flex;
+  .login-form-container {
+    width: 100%;
+    .login-form-content {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      .text-field-style {
+        margin: 15px;
+        &.bottom-style {
+          border-radius: 0px;
+          background: deeppink;
+          color: white;
+        }
+      }
+      .create-account-text {
+        margin: 20px;
+      }
+    }
+  }
+}

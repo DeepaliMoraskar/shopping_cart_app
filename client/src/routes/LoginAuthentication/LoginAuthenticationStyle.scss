@@ -1,0 +1,33 @@
+@import "../../variable.scss";
+
+.login-Auth-container {
+  display: flex;
+  justify-content: center;
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .login-desc-container {
+      padding: 1rem;
+      width: 50%;
+      @include mobile {
+        width: 88%;
+      }
+    }
+
+    .login-authform-container {
+      padding: 1rem;
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

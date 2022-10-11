@@ -1,0 +1,62 @@
+@import "../../variable.scss";
+
+@include desktop {
+  .menu-container {
+    background: silver;
+
+    .desktop-menu {
+      display: flex;
+      flex-direction: column;
+      @include mobile {
+        display: none;
+      }
+
+      .menu-items-style {
+        border-bottom: 1px solid lightgray;
+        padding: 20px;
+        cursor: pointer;
+        &.menu-items-style-active {
+          background-color: gainsboro;
+        }
+      }
+    }
+
+    .mobile-menu {
+      @include mobile {
+        display: block;
+      }
+      .category-dropdown {
+        display: none;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .menu-items-style {
+    display: none;
+  }
+  .category-dropdown {
+    margin: 10px 0px;
+    width: 100%;
+    background-color: #d00156;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+  }
+}
+
+@include tablet {
+  .menu-items-style {
+    display: block;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+    cursor: pointer;
+    &.menu-items-style-active {
+      background-color: gainsboro;
+    }
+  }
+  .category-dropdown {
+    display: none;
+  }
+}

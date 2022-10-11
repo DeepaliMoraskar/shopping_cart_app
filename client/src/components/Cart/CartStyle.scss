@@ -1,0 +1,129 @@
+@import "../../variable.scss";
+
+.MuiPaper-root {
+  background-color: gainsboro !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .MuiDialogContent-root {
+    flex: inherit;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+  }
+
+  .cart-title-style {
+    background: black;
+    color: white;
+  }
+  
+  .cart-content-style {
+    .cart-content-container {
+      .cart-item-content {
+        display: flex;
+        background-color: white;
+        padding: 10px;
+        margin-top: 10px;
+
+        .cart-item-img {
+          padding-right: 10px;
+        }
+
+        .cart-item-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          .cart-item-title {
+            p {
+              margin: 0;
+              font-size: medium;
+              font-weight: bold;
+              @include mobile {
+                font-size: small;
+              }
+            }
+          }
+
+          .cart-item-add-remove-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+
+            .cart-item-add-remove {
+              display: flex;
+              align-items: center;
+
+              button {
+                width: 25px;
+                height: 25px;
+                color: white;
+                padding: 5px;
+                background-color: mediumvioletred;
+              }
+              p {
+                margin-left: 10px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text-field-style {
+    margin: 15px;
+    &.bottom-style {
+      border-radius: 0px;
+      background: deeppink;
+      color: white;
+    }
+  }
+}
+
+.cart-no-items-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  p:first-child {
+    font-size: large;
+    font-weight: bold;
+  }
+}
+
+.cart-lowest-price-container {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  margin-top: 10px;
+  width: 95%;
+  p {
+    margin-left: 10px;
+  }
+}
+.cart-dialog-footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  width: 97%;
+
+  button {
+    background-color: mediumvioletred;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button:hover {background-color: mediumvioletred}
+}

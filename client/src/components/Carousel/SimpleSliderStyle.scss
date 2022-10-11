@@ -1,0 +1,17 @@
+@import "../../variable.scss";
+
+.SliderContainer {
+  width: 70%;
+  //   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+  //     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  @include mobile {
+    width: 100%;
+  }
+  .slick-arrow {
+    z-index: 1;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+}

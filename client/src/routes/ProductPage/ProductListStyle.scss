@@ -1,0 +1,40 @@
+@import "../../variable.scss";
+
+.product-page-container {
+  display: flex;
+  justify-content: center;
+
+  .product-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+
+    @include desktop {
+      width: 70% !important;
+    }
+    @include tablet {
+      width: 100%;
+    }
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .menu-list-container {
+      background-color: silver;
+      width: 20%;
+      @include mobile {
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+
+    .product-list-container {
+      width: 80%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}

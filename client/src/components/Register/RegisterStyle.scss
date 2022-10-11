@@ -1,0 +1,17 @@
+@import "../../variable.scss";
+
+.form-container {
+  .form-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    .text-field-style {
+      margin: 15px;
+      &.bottom-style {
+        border-radius: 0px;
+        background: deeppink;
+        color: white;
+      }
+    }
+  }
+}

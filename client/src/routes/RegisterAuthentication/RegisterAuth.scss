@@ -1,0 +1,33 @@
+@import "../../variable.scss";
+
+.register-Auth-container {
+  display: flex;
+  justify-content: center;
+
+  .register-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    .register-desc-container {
+      padding: 1rem;
+      width: 50%;
+      @include mobile {
+        width: 88%;
+      }
+    }
+
+    .register-form-container {
+      padding: 1rem;
+      width: 50%;
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
